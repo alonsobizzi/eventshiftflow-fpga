@@ -1,4 +1,4 @@
-Project Webpage for EventShiftFlow.
+### Project Webpage for EventShiftFlow.
 
 GRASP Lab University of Pennsylvania.
 
