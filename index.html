@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Low-Latency Motion Extraction from Event Cameras on FPGA</title>
+  <style>
+    body {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #111;
+    }
+    h1, h2 {
+      line-height: 1.2;
+    }
+    .authors {
+      color: #444;
+      margin-bottom: 24px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      margin: 20px 0;
+    }
+    .links a {
+      display: inline-block;
+      margin: 8px 12px 8px 0;
+      padding: 10px 14px;
+      text-decoration: none;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: #111;
+    }
+    .links a:hover {
+      background: #f3f3f3;
+    }
+    .section {
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Low-Latency Motion Extraction from Event Cameras on FPGA</h1>
+
+  <div class="authors">
+    Arianna Alonso Bizzi<br>
+    University of Pennsylvania, GRASP Lab<br>
+    Supervised by C.J. Taylor and F. Cladera
+  </div>
+
+  <div class="section">
+    <h2>Abstract</h2>
+    <p>
+      Event-based vision sensors provide asynchronous, high-temporal-resolution
+      measurements that are attractive for low-latency robotic perception.
+      This project investigates a lightweight, hardware-friendly method for
+      detecting motion from event-camera data in real time by testing a small
+      set of motion hypotheses rather than computing full optical flow for each
+      pixel. The goal is to validate the approach in software and assess how
+      efficiently it can be mapped to FPGA hardware.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Method Overview</h2>
+    <img src="figure.png" alt="Project pipeline figure">
+    <p>
+      Incoming events are discretized into short time bins and processed
+      independently along the horizontal and vertical axes using shift-register-
+      based logic and windowed accumulation.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Resources</h2>
+    <div class="links">
+      <a href="paper.pdf">Paper</a>
+      <a href="slides.pdf">Slides</a>
+      <a href="https://github.com/yourusername/yourrepo">Code</a>
+      <a href="demo.mp4">Demo Video</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p>
+      Arianna Alonso Bizzi at alari@upenn.edu<br>
+      University of Pennsylvania
+    </p>
+  </div>
+</body>
+</html>
